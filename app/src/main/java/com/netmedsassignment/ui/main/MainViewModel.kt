@@ -63,7 +63,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    // When item is checked it is remove from Cart table
+    // When item is unchecked it is remove from Cart table
     fun removeItemFromCart(cartItem: CartItem){
         GlobalScope.launch(Dispatchers.IO) {
             val databaseManager = DatabaseManager.getDatabase(MyApplication.mInstance)
