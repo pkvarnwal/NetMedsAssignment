@@ -113,7 +113,6 @@ class MainActivity : AppCompatActivity(), ApiAdapter.OnItemSaveListener {
         })
     }
 
-
     // this is overie method, it is called when check box is clicked, when it is cheked the iteem is ad
     override fun onItemChecked(isChecked: Boolean, data: ApiItem) {
        mainViewModel.updateApiItem(data)
